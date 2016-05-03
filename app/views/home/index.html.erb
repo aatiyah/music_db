@@ -1,0 +1,22 @@
+<br><br>
+
+<div class="artists">
+	<div class="row">
+		<% @artists.each do |artist| %>
+			<div class="col s6">
+				<div class="card">
+					<div class="card-image">
+						<%= image_tag ("#{artist.name}.jpg")%>
+
+					</div>
+					<div class="card-content">
+						<p></p>
+					</div>
+					<div class="card-action center">
+						<%= link_to artist.name, artist_show_path%>
+					</div>
+				</div>
+			</div>
+		<% end %>
+	</div>
+</div>
