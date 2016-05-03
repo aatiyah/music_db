@@ -21,6 +21,11 @@ body {
 	background-color: #424242;
 }
 
+.card .card-image img {
+	height: 200px;
+	width: 100%;
+}
+
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
 	color: gray;
 }
