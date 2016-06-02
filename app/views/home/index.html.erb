@@ -1,4 +1,4 @@
-<br><br>
+<br>
 
 <div class="artists">
 	<div class="row">
@@ -6,14 +6,12 @@
 			<div class="col s12 m4 l3">
 				<div class="card">
 					<div class="card-image">
-						<%= image_tag ("#{artist.name}.jpg")%>
+						<%= link_to (image_tag ("#{artist.name}.jpg")), artist_path(artist.id)%>
 
 					</div>
-					<div class="card-content">
-						<p></p>
-					</div>
+					
 					<div class="card-action center">
-						<%= link_to artist.name, artist_show_path%>
+						<%= link_to artist.name, artist_path(artist.id)%>
 					</div>
 				</div>
 			</div>

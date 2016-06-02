@@ -4,6 +4,7 @@ class ArtistsController < ApplicationController
   end
 
   def show
-  	@artist = Artist.find params[:artis_id]
+  	@artist = Artist.find params[:artist_id]
+  	@url = @artist.name
   end
 end
